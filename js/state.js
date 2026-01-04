@@ -1,3 +1,5 @@
+// State : Application state variables
+
 const svg = document.getElementById("canvas");
 const coordsEl = document.getElementById("coords");
 

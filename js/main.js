@@ -1,3 +1,5 @@
+// Main : Main application logic
+
 drawGrid();
 createHatchPattern();
 

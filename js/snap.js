@@ -1,3 +1,5 @@
+// Snap : Functions to handle snapping behavior
+
 function findSnapPoint(x, y) {
     let closest = null;
     let minDist = SNAP_RADIUS;

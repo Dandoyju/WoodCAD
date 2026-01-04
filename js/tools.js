@@ -1,3 +1,5 @@
+// Tools : Functions to handle drawing tools
+
 function setTool(t) {
     tool = t;
     reset();

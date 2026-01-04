@@ -1,3 +1,5 @@
+// Export : Functions to export content
+
 function exportSVG() {
     const serializer = new XMLSerializer();
     const source = serializer.serializeToString(svg);
@@ -7,7 +9,7 @@ function exportSVG() {
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = "woodcad.svg";
+    a.download = "WoodCAD.svg";
     a.click();
 
     URL.revokeObjectURL(url);

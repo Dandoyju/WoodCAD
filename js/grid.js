@@ -1,3 +1,5 @@
+// Grid : Functions to draw the grid on the SVG canvas
+
 function gridLine(x1, y1, x2, y2, color = "#e0e0e0") {
     const l = document.createElementNS(svg.namespaceURI, "line");
     l.setAttribute("x1", x1);
