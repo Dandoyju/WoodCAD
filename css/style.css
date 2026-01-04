@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #e29c407e;
+    font-family: Arial, sans-serif;
+}
+
+#toolbar {
+    background: #8b5a2b;
+    color: white;
+    padding: 10px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+svg {
+    display: block;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background: white;
+    cursor: crosshair;
+}
+
+.preview {
+    stroke-dasharray: 6,4;
+    stroke: #555;
+}
