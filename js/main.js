@@ -16,11 +16,12 @@ svg.addEventListener("click", (e) => {
     if (clickCount === 0) {
         startX = x;
         startY = y;
-        if (tool === "line") {
-            preview = create("line", { x1:x, y1:y, x2:x, y2:y }, true);
-            svg.appendChild(preview);
-            clickCount = 1;
-        }
+
+        preview = createPreview(x, y);
+        if (!preview) return;
+
+        svg.appendChild(preview);
+        clickCount = 1;
     } else {
         finalizeShape(x, y);
         reset();
@@ -41,8 +42,9 @@ svg.addEventListener("mousemove", (e) => {
     }
 
     if (preview) {
-        preview.setAttribute("x2", x);
-        preview.setAttribute("y2", y);
+        //preview.setAttribute("x2", x);
+        //preview.setAttribute("y2", y);
+        updatePreview(x, y);
     }
 
     const dxPx = x - originX;
